@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa+One&display=swap');
+
+.welcome {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(90deg, #69b7eb, #b3dbd3, #f4d6db);
+  position: relative;
+  overflow: hidden;
+}
+
+.welcome > h1 {
+  font-family: 'Changa One';
+  font-weight: normal;
+  font-size: 114px;
+  left: 160px;
+  top: 185px;
+  position: absolute;
+  color: white;
+}
+
+.input-field {
+  position: absolute;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px 115px;
+  left: 150px;
+  top: 360px;
+  text-align: center;
+}
+
+.input-field > ::placeholder {
+  color: rgba(241, 245, 247, 0.842);
+}
+
+.input-field > input {
+  height: 30px;
+  width: 80%;
+  border: 1px solid gray;
+  outline: none;
+  margin-bottom: 15px;
+  font-size: 25px;
+  padding: 5px;
+}
+
+.input-field > button {
+  padding: 5px 20px;
+  border: none;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.sign-in {
+  background: #69b7eb;
+  font-size: 20px;
+  margin-top: 10px;
+  font-family: 'Changa One';
+  font-weight: normal;
+  color: white;
+}
+
+.sign-in:hover {
+  background: #69b7eb;
+  font-size: 20px;
+  margin-top: 10px;
+  font-family: 'Changa One';
+  font-weight: normal;
+  color: white;
+  transform: scale(1.1);
+}
+
+.register-button {
+  background: #69b7eb;
+  font-size: 20px;
+  margin-top: 10px;
+  font-family: 'Changa One';
+  font-weight: normal;
+  color: white;
+  height: 40px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.register-button:hover {
+  background: #69b7eb;
+  font-size: 20px;
+  margin-top: 10px;
+  font-family: 'Changa One';
+  font-weight: normal;
+  color: white;
+  transform: scale(1.1);
+}
+
+.create-account-button {
+  background: none;
+  margin-top: 10px;
+}
+
+.create-account-button:hover {
+  background-color: rgba(224, 215, 215, 0.2);
+  margin-top: 10px;
+}
+
+.back-account-button {
+  background: none;
+}
+
+.back-account-button:hover {
+  background-color: rgba(224, 215, 215, 0.2);
+}
+
+.todo-svg {
+  position: absolute;
+  bottom: 100px;
+  right: 150px;
+  transform: scale(1.3);
+}

@@ -1,0 +1,196 @@
+body {
+  background: linear-gradient(90deg, #69b7eb, #b3dbd3, #f4d6db);
+}
+
+.wrap {
+  width: 100%;
+  padding: 24px;
+  margin-bottom: 40px;
+  padding-top: 30px;
+}
+
+.wrap__item input {
+  padding-right: 10px;
+}
+
+.wrap__item input {
+  float: left;
+  width: calc(100% - 70px);
+}
+
+.add-edit-input {
+  top: 40px;
+  outline: none;
+  border: none;
+  height: 30px;
+  font-size: 25px;
+  padding: 5px 20px;
+}
+
+::placeholder {
+  color: rgba(255, 255, 255, 0.829);
+}
+
+.todo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.todo > span {
+  width: 900px;
+  background-color: rgb(252, 251, 251);
+  font-size: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 4px;
+  box-shadow: 0px 0px 5px #607d8b;
+  word-break: break-word;
+  align-items: center;
+  display: flex;
+  transition-property: all;
+  transition-duration: 0.5s;
+}
+
+.todo > a {
+  width: 900px;
+  background-color: rgb(252, 251, 251);
+  font-size: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 4px;
+  box-shadow: 0px 0px 5px #607d8b;
+  word-break: break-word;
+  align-items: center;
+  display: flex;
+  transition-property: all;
+  transition-duration: 0.5s;
+}
+
+.todo.done > span {
+  width: 900px;
+  background-color: rgb(252, 251, 251);
+  font-size: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 4px;
+  box-shadow: 0px 0px 5px #607d8b;
+  word-break: break-word;
+  align-items: center;
+  display: flex;
+  transition-property: all;
+  transition-duration: 0.5s;
+  background: rgba(255, 255, 255, 0.452);
+  color: rgb(142, 142, 143);
+  text-decoration: line-through;
+}
+
+.todo.done > a {
+  width: 900px;
+  background-color: rgb(252, 251, 251);
+  font-size: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 4px;
+  box-shadow: 0px 0px 5px #607d8b;
+  word-break: break-word;
+  align-items: center;
+  display: flex;
+  transition-property: all;
+  transition-duration: 0.5s;
+  background: rgba(255, 255, 255, 0.452);
+  color: rgb(142, 142, 143);
+  text-decoration: line-through;
+}
+
+.add-confirm-icon {
+  transform: scale(2);
+  cursor: pointer;
+}
+
+.edit-button,
+.delete-button {
+  cursor: pointer;
+  margin-left: 18px;
+}
+
+.change-button {
+  margin-right: 18px;
+  cursor: pointer;
+}
+
+.logout-icon {
+  cursor: pointer;
+  position: absolute;
+  top: 22px;
+  right: 20px;
+  scale: 1.3;
+}
+
+.logout-icon:hover {
+  transform: scale(1.3);
+}
+
+.add-confirm-icon:hover {
+  cursor: pointer;
+  transform: scale(2.4);
+}
+
+.edit-button:hover,
+.delete-button:hover {
+  cursor: pointer;
+  margin-left: 18px;
+  transform: scale(1.3);
+}
+
+.change-button:hover {
+  margin-right: 18px;
+  cursor: pointer;
+  transform: scale(1.4);
+}
+
+.note-exit-active {
+  animation: note 500ms ease-out forwards;
+}
+
+.note-enter-active {
+  animation: note 500ms ease-in alternate-reverse;
+}
+
+.todo-icon {
+  height: 60px;
+  position: absolute;
+  right: 40px;
+  bottom: 50px;
+}
+
+.version {
+  position: absolute;
+  bottom: 15px;
+  right: 18px;
+  opacity: 0.5;
+}
+
+@keyframes note {
+  0% {
+    transform: translateX(0);
+  }
+
+  30% {
+    opacity: 0.7;
+    transform: translateX(30px);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateX(-200px);
+  }
+}
+
+@media (max-width: 768px) {
+  .versia {
+    position: absolute;
+    bottom: 0;
+  }
+}
